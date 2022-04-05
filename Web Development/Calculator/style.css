@@ -1,0 +1,42 @@
+.box {
+     align-content: center;
+    text-align: center;
+    width: 300px;
+    border: 5px double grey;
+    padding: 50px;
+  margin-left: 800px;
+    margin-top: 310px;
+    transform: scale(1.5);
+    overflow: hidden;
+    justify-content: space-between;
+}
+body {
+    background-image: url(math.jpg);
+}
+form {
+    
+}
+input[type=button]{
+    text-align: center;
+    display: inline-block;
+    transition-duration: 0.5s;
+
+}
+input[type=button]:focus {
+    background-color: aqua;
+}
+input[type=button]:hover {
+  background-color: dimgrey;
+  color: white;
+  border-radius: 2px;
+}
+.field{
+    width: 60px;
+}
+h1{
+    font-family: cursive;
+    color: azure;
+    font-size: 50px;
+    text-align: center;
+    
+}

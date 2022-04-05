@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Calculator</title>
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <script type="text/javascript">
+        function numbers(a){
+            CalcForm.display.value+=a;
+        }
+        function equal(){
+            CalcForm.display.value=eval(CalcForm.display.value);
+        }
+        function C(){
+            CalcForm.display.value="0";
+        }
+        function fnsin(){
+            CalcForm.display.value=Math.sin(CalcForm.display.value);
+        }
+        function fncos(){
+            CalcForm.display.value=Math.cos(CalcForm.display.value);
+        }
+        function fntan(){
+            CalcForm.display.value=Math.tan(CalcForm.display.value);
+        }
+        function sqr(){
+            CalcForm.display.value=Math.pow(CalcForm.display.value,0.5);
+        }
+        function expo(){
+            CalcForm.display.value=Math.exp(CalcForm.display.value);
+        }
+        function log(){
+            CalcForm.display.value=Math.log(CalcForm.display.value);
+        }
+        function round(){
+            CalcForm.display.value=Math.round((CalcForm.display.value * 100)/100);
+        }
+    </script>
+    <body>
+        <div id="title"><h1>Math Genius</h1></div>
+        <div class="box">
+    
+        <form name="CalcForm">
+            <input type="text" name="display" size="40px"><br>
+            <input type="button" name="btn1" value="1" onclick="numbers('1')">
+            <input type="button" name="btn2" value="2" onclick="numbers('2')">
+            <input type="button" name="btn3" value="3" onclick="numbers('3')">&nbsp&nbsp
+            <input type="button" name="btnPlus" value="+" onclick="numbers('+')"> 
+            <input type="button" name="btnMinus" value="-" onclick="numbers('-')">&nbsp&nbsp
+            <input type="button" name="btnCos" value="cos" onclick="fncos()">
+            <input type="button" name="btnTan" value="tan" onclick="fntan()"><br>
+            <input type="button" name="btn4" value="4" onclick="numbers('4')">
+            <input type="button" name="btn5" value="5" onclick="numbers('5')">
+            <input type="button" name="btn6" value="6" onclick="numbers('6')"> &nbsp&nbsp
+            <input type="button" name="btnMult" value="X" onclick="numbers('*')"> 
+            <input type="button" name="btnDiv" value="/" onclick="numbers('/')">&nbsp&nbsp
+            <input type="button" name="btnSin" value="sin" onclick="fnsin()">
+            <input type="button" name="btnSqrt" value="sqrt" onclick="sqr()"><br>
+            <input type="button" name="btn7" value="7" onclick="numbers('7')">
+            <input type="button" name="btn8" value="8" onclick="numbers('8')">
+            <input type="button" name="btn9" value="9" onclick="numbers('9')">&nbsp&nbsp
+            <input type="button" name="btnEQ" value="=" onclick="equal()">
+            <input type="button" name="btnC" value="C" onclick="C()"> &nbsp&nbsp
+            <input type="button" name="btnExp" value="exp" onclick="expo()">
+            <input type="button" name="btnRnd" value="rnd" onclick="round()"><br>
+            <input type="button" name="btn0" value="0" onclick="numbers('0')">
+            <input type="button" name="btnPoint" value="." onclick="numbers('.')">
+            <input type="button" name="btnHEC" value="+/-" onclick="numbers('+/-')">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="button" name="btnLog" value="log" onclick="log()">
+        </form>
+            </div>
+    </body>
+</html>
