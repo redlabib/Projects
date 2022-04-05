@@ -1,0 +1,392 @@
+@-ms-viewport{
+    width: device-width;
+}
+body {
+    background-color: azure;
+    margin: 0px;
+    padding: 0px;
+    overflow-y: auto;
+}
+ul{
+    list-style: none;
+}
+.main{
+    width: 100%;
+    height: 95vh;
+    background-image: url(../Images/Lich%20king.gif);
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 30px;
+    
+}
+.navbar {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 60px;
+    background-color: skyblue;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    justify-content: space-between;
+    padding: 0px 5%;
+    position: fixed;
+    width:100%;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar-links li {
+    list-style: none;
+}
+.navbar-links li a {
+    text-decoration: none;
+    color:bisque;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: mediumpurple;
+    opacity: inherit;
+}
+.nav a{
+    float: right;
+    display: block;
+    color: bisque;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: mediumpurple;
+    opacity: inherit;
+}
+nav ul li a{                    /*Inheritence*/
+    padding: 1rem;
+    text-decoration: none;
+    font-family: fantasy;
+    color: blanchedalmond;
+    font-size: 20px;
+    font-weight: 700;
+}
+.web-title{
+    font-family:cursive;
+    color: #000000;
+    margin: .5 rem; 
+    font-size: 20px;
+}
+
+@media (max-width: 400,98px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+    }
+    
+    .navbar-links ul{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .navbar-links li{
+        text-align: center;
+    }
+    
+    .navbar-links li a{
+        padding: .5rem 1rem;   
+    }
+    .navbar-links.active{
+        display: inline;
+    }
+}
+@media (max-width: 575,98px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar-links ul{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .navbar-links li{
+        text-align: center;
+    }
+    
+    .navbar-links li a{
+        padding: .5rem 1rem;   
+    }
+    .navbar-links.active{
+        display: inline;
+    }
+}
+@media (max-width: 767,98px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar-links ul{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .navbar-links li{
+        text-align: center;
+    }
+    
+    .navbar-links li a{
+        padding: .5rem 1rem;   
+    }
+    .navbar-links.active{
+        display: inline;
+    }
+}
+@media (max-width: 991,98px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar-links ul{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .navbar-links li{
+        text-align: center;
+    }
+    
+    .navbar-links li a{
+        padding: .5rem 1rem;   
+    }
+    .navbar-links.active{
+        display: inline;
+    }
+}
+
+.text-container p:nth-child(1){
+    font-family: cursive;
+    font-weight: bold;
+    color: cornflowerblue;
+    font-size: 20px;
+}
+.text-container p:nth-child(2){
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: darkblue;
+    font-size: 60px; 
+}
+.text-container p:nth-child(3){
+    font-family: cursive;
+    color: aquamarine;
+    font-size: 30px;
+}
+.text-container p{
+    text-align: center;
+    line-height: 0px;
+    margin: 45px 0px 25px;
+}
+.text-container{
+    position: absolute;
+    left: 13%;
+    top: 42%;
+    transform: translate(-13%,-42%);
+}
+.Arthas{
+    height: 60px;
+    position: absolute;
+    left: 32%;
+    top: 190px;
+    border-radius: 30%;
+    opacity: 0.8;
+    filter: grayscale(20%);
+}
+.Arthas:hover{
+    opacity: 1;
+}
+.portfolio{
+    height: 650px;
+    background-color: darkslateblue;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 2% 10% 0px 10%;
+}
+.portfolio-title{
+    font-family: cursive;
+    font-weight: bold;
+    color: aquamarine;
+    font-size: 30px;
+    text-align: center;
+}
+.portfolio-table{
+    margin: auto;
+    width: 100%;
+}
+.portfolio-table img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#portfolio-table img {
+    max-height: 300px;
+    max-width: 300px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+
+.about-container{
+    top: 10px;
+    width: 100%;
+    height: 580px;
+    background-color: darkcyan;
+    margin: -7% auto 20px auto;
+    position: relative;
+    align-items: center;
+}
+.about-img{
+    height: 200px;
+    position: relative;
+    border-radius: 20%;
+    opacity: 0.8;
+    top: 30px;
+    left:42%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-text{
+    width: 550px;
+    left: 32%;
+    position: relative;
+    text-align: justify;
+    text-justify: inter-word;
+    font-style: italic;
+    align-items: center;
+    align-content: center;
+}
+
+.Aboutt{
+    margin-top: 40px;
+    text-align: center;
+    color: bisque;
+    font-size: 22px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.column{
+    flex:50%;
+    color: bisque;
+    padding: 10px;
+    font-size: 13px;
+    font-family: monospace;
+    font-weight: bold;
+    line-height: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+.row{
+    display: flex;
+}
+.Contact{
+    top: 56px;
+    width: 100%;
+    height: auto;
+    background-color:cadetblue;
+    margin: -7% auto 20px auto;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+form{
+    align-items:center;
+    text-align: center;
+    justify-items: center;
+    display: inline-block;
+}
+
+
+.last-image{
+    float: right;
+    width: 300px;
+    height: auto;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+.border{
+    height: 100px;
+    margin-top: 18px;
+    background-color: aquamarine;
+}
+.IG{
+    width: 80px;
+    height: 60px;
+    align-content: center;
+    position: relative;
+    top: 20px;
+}
+.IG:hover{
+    background-color: deeppink;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+.FB{
+    width: 80px;
+    height: 60px;
+    align-content: center;
+    position: relative;
+    top: 20px;
+}
+.FB:hover{
+    background-color: blue;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+.Tweet{
+    width: 80px;
+    height: 60px;
+    align-content: center;
+    position: relative;
+    top: 20px;
+}
+.Tweet:hover{
+    background-color: skyblue;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+.border-text1{
+    float: left;
+    position: relative;
+    margin: 20px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-style: oblique;
+}
+.border-text2{
+    float: right;
+    margin: 20px;
+    position: relative;
+    font-size: 18px;
+    font-style: oblique;
+}
