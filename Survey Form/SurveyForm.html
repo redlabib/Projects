@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="valid.js"></script>
+	<div class="box">
+		<h1 class="label">Survey Form for Web Tech</h1>
+		<form class="surveyForm" method="post" name="form" onsubmit="return validated()">
+            <div class="font">Name</div>
+			<input autocomplete="off" type="text" name="name1" placeholder="Mark Anderson" required>
+            <div id="name_error">Please enter your name.</div>
+			<div class="font font2">Phone number</div>
+			<input type="number" name="numb" required>
+            <div id="numb_error">Please enter your Phone Number.</div>
+            <div class="font">Email</div>
+			<input autocomplete="off" type="email" name="email" placeholder="mark@gmail.com" required>
+			<div id="email_error">Please enter your Email.</div>
+            <div class="font">Date of Birth:</div> <input type="date" name="DOB">
+            <div class="font">Gender:</div> <select id="gend" name="Gender" id="drop-down" required>
+               <option value="Male">Male</option>
+               <option value="Male">Female</option>
+               <option value="Male">Other</option>
+               </select>
+			<button type="submit" onclick="validated(document.form.name,5,20)">Submit</button>
+		</form>
+	</div>	
+</body>
+</html>
